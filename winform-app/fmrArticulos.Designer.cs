@@ -51,8 +51,7 @@
             // 
             // dgvArticulos
             // 
-            this.dgvArticulos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvArticulos.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvArticulos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -77,6 +76,7 @@
             // 
             // pbxArticulos
             // 
+            this.pbxArticulos.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbxArticulos.Location = new System.Drawing.Point(904, 50);
             this.pbxArticulos.Name = "pbxArticulos";
             this.pbxArticulos.Size = new System.Drawing.Size(268, 262);
@@ -86,6 +86,7 @@
             // 
             // btnAgregar
             // 
+            this.btnAgregar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnAgregar.Location = new System.Drawing.Point(12, 336);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(99, 23);
@@ -96,6 +97,7 @@
             // 
             // btnModificar
             // 
+            this.btnModificar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnModificar.Location = new System.Drawing.Point(117, 336);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(99, 23);
@@ -106,6 +108,7 @@
             // 
             // btnEliminarFisico
             // 
+            this.btnEliminarFisico.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnEliminarFisico.Location = new System.Drawing.Point(222, 336);
             this.btnEliminarFisico.Name = "btnEliminarFisico";
             this.btnEliminarFisico.Size = new System.Drawing.Size(99, 23);
@@ -116,6 +119,7 @@
             // 
             // lblFiltro
             // 
+            this.lblFiltro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFiltro.AutoSize = true;
             this.lblFiltro.Location = new System.Drawing.Point(13, 26);
             this.lblFiltro.Name = "lblFiltro";
@@ -125,6 +129,7 @@
             // 
             // txtBoxFiltro
             // 
+            this.txtBoxFiltro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtBoxFiltro.Location = new System.Drawing.Point(54, 24);
             this.txtBoxFiltro.Name = "txtBoxFiltro";
             this.txtBoxFiltro.Size = new System.Drawing.Size(134, 20);
@@ -133,6 +138,7 @@
             // 
             // btnFiltro
             // 
+            this.btnFiltro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnFiltro.Location = new System.Drawing.Point(629, 391);
             this.btnFiltro.Name = "btnFiltro";
             this.btnFiltro.Size = new System.Drawing.Size(100, 20);
@@ -143,6 +149,7 @@
             // 
             // lblCampo
             // 
+            this.lblCampo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCampo.AutoSize = true;
             this.lblCampo.Location = new System.Drawing.Point(22, 395);
             this.lblCampo.Name = "lblCampo";
@@ -152,6 +159,7 @@
             // 
             // cboCampo
             // 
+            this.cboCampo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cboCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCampo.FormattingEnabled = true;
             this.cboCampo.Location = new System.Drawing.Point(71, 391);
@@ -162,6 +170,7 @@
             // 
             // lblCriterio
             // 
+            this.lblCriterio.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCriterio.AutoSize = true;
             this.lblCriterio.Location = new System.Drawing.Point(212, 394);
             this.lblCriterio.Name = "lblCriterio";
@@ -171,6 +180,7 @@
             // 
             // cboCriterio
             // 
+            this.cboCriterio.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cboCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCriterio.FormattingEnabled = true;
             this.cboCriterio.Location = new System.Drawing.Point(260, 391);
@@ -180,6 +190,7 @@
             // 
             // lblFiltroAvanzado
             // 
+            this.lblFiltroAvanzado.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFiltroAvanzado.AutoSize = true;
             this.lblFiltroAvanzado.Location = new System.Drawing.Point(404, 395);
             this.lblFiltroAvanzado.Name = "lblFiltroAvanzado";
@@ -189,6 +200,7 @@
             // 
             // txtFiltroAvanzado
             // 
+            this.txtFiltroAvanzado.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtFiltroAvanzado.Location = new System.Drawing.Point(493, 392);
             this.txtFiltroAvanzado.Name = "txtFiltroAvanzado";
             this.txtFiltroAvanzado.Size = new System.Drawing.Size(100, 20);
@@ -196,6 +208,7 @@
             // 
             // btnReiniciarFiltro
             // 
+            this.btnReiniciarFiltro.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnReiniciarFiltro.Location = new System.Drawing.Point(763, 389);
             this.btnReiniciarFiltro.Name = "btnReiniciarFiltro";
             this.btnReiniciarFiltro.Size = new System.Drawing.Size(100, 23);
@@ -206,6 +219,7 @@
             // 
             // btnDetalle
             // 
+            this.btnDetalle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnDetalle.Location = new System.Drawing.Point(327, 336);
             this.btnDetalle.Name = "btnDetalle";
             this.btnDetalle.Size = new System.Drawing.Size(99, 23);

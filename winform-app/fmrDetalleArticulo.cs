@@ -40,6 +40,7 @@ namespace winform_app
             {
                 pboxDetalle.Load(imagen);
 
+
             }
             catch (Exception)
             {
