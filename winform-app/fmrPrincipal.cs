@@ -152,6 +152,26 @@ namespace winform_app
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-       
+
+        private void iconBtnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void iconBtnMaximize_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
+            else
+                WindowState = FormWindowState.Normal;
+        }
+
+        private void iconBtnMinimize_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+
+        }
+
+
     }
 }
