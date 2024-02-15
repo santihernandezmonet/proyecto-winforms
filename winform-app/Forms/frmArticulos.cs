@@ -13,12 +13,12 @@ using winform_app;
 
 namespace winform_app
 {
-    public partial class fmrArticulos : Form
+    public partial class frmArticulos : Form
     {
 
         private List<Articulo> listaArticulos;
 
-        public fmrArticulos()
+        public frmArticulos()
         {
             InitializeComponent();
         }
@@ -246,5 +246,9 @@ namespace winform_app
 
         }
 
+        private void lblFiltro_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

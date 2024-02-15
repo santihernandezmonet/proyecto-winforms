@@ -54,43 +54,43 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="fmrAltaArticulo.cs">
+    <Compile Include="Forms\frmAltaArticulo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmrAltaArticulo.Designer.cs">
-      <DependentUpon>fmrAltaArticulo.cs</DependentUpon>
+    <Compile Include="Forms\frmAltaArticulo.Designer.cs">
+      <DependentUpon>frmAltaArticulo.cs</DependentUpon>
     </Compile>
-    <Compile Include="fmrArticulos.cs">
+    <Compile Include="Forms\frmArticulos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmrArticulos.Designer.cs">
-      <DependentUpon>fmrArticulos.cs</DependentUpon>
+    <Compile Include="Forms\frmArticulos.Designer.cs">
+      <DependentUpon>frmArticulos.cs</DependentUpon>
     </Compile>
-    <Compile Include="fmrDetalleArticulo.cs">
+    <Compile Include="Forms\frmDetalleArticulo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmrDetalleArticulo.Designer.cs">
-      <DependentUpon>fmrDetalleArticulo.cs</DependentUpon>
+    <Compile Include="Forms\frmDetalleArticulo.Designer.cs">
+      <DependentUpon>frmDetalleArticulo.cs</DependentUpon>
     </Compile>
-    <Compile Include="fmrPrincipal.cs">
+    <Compile Include="Forms\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmrPrincipal.Designer.cs">
-      <DependentUpon>fmrPrincipal.cs</DependentUpon>
+    <Compile Include="Forms\frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="fmrAltaArticulo.resx">
-      <DependentUpon>fmrAltaArticulo.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmAltaArticulo.resx">
+      <DependentUpon>frmAltaArticulo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fmrArticulos.resx">
-      <DependentUpon>fmrArticulos.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmArticulos.resx">
+      <DependentUpon>frmArticulos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fmrDetalleArticulo.resx">
-      <DependentUpon>fmrDetalleArticulo.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmDetalleArticulo.resx">
+      <DependentUpon>frmDetalleArticulo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fmrPrincipal.resx">
-      <DependentUpon>fmrPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

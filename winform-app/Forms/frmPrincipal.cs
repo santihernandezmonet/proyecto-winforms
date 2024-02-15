@@ -12,16 +12,17 @@ using FontAwesome.Sharp;
 using Color = System.Drawing.Color;
 using System.Runtime.InteropServices;
 
+
 namespace winform_app
 {
-    public partial class fmrPrincipal : Form
+    public partial class frmPrincipal : Form
     {
         //FIELDS
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
 
-        public fmrPrincipal()
+        public frmPrincipal()
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
@@ -92,7 +93,7 @@ namespace winform_app
         private void iconBtnListar_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(255, 252, 252));
-            OpenChildForm(new fmrArticulos());
+            OpenChildForm(new frmArticulos());
         }
 
         private void iconBtnAgregar_Click(object sender, EventArgs e)
@@ -104,13 +105,14 @@ namespace winform_app
         private void iconBtnModificar_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(255, 252, 252));
+            OpenChildForm(new frmAltaArticulo());
             
         }
 
         private void iconBtnBuscar_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(255, 252, 252));
-            OpenChildForm(new fmrArticulos());
+            OpenChildForm(new frmArticulos());
         }
 
         private void iconBtnDetalle_Click(object sender, EventArgs e)

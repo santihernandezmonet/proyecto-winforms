@@ -1,6 +1,6 @@
 ﻿namespace winform_app
 {
-    partial class fmrPrincipal
+    partial class frmPrincipal
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmrPrincipal));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.iconBtnEliminar = new FontAwesome.Sharp.IconButton();
             this.iconBtnDetalle = new FontAwesome.Sharp.IconButton();
