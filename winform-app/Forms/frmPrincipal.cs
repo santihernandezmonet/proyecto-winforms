@@ -102,29 +102,13 @@ namespace winform_app
             OpenChildForm(new frmAltaArticulo());
         }
 
-        private void iconBtnModificar_Click(object sender, EventArgs e)
+        private void iconBtnAjustes_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, Color.FromArgb(255, 252, 252));
-            OpenChildForm(new frmAltaArticulo());
-            
+
         }
 
-        private void iconBtnBuscar_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, Color.FromArgb(255, 252, 252));
-            OpenChildForm(new frmArticulos());
-        }
 
-        private void iconBtnDetalle_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, Color.FromArgb(255, 252, 252));
-            
-        }
-
-        private void iconBtnEliminar_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, Color.FromArgb(255, 252, 252));
-        }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
@@ -174,6 +158,6 @@ namespace winform_app
 
         }
 
-
+    
     }
 }

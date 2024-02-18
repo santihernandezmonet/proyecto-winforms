@@ -30,10 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.iconBtnEliminar = new FontAwesome.Sharp.IconButton();
-            this.iconBtnDetalle = new FontAwesome.Sharp.IconButton();
-            this.iconBtnBuscar = new FontAwesome.Sharp.IconButton();
-            this.iconBtnModificar = new FontAwesome.Sharp.IconButton();
+            this.iconBtnAjustes = new FontAwesome.Sharp.IconButton();
             this.iconBtnAgregar = new FontAwesome.Sharp.IconButton();
             this.iconBtnListar = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -59,110 +56,38 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(132)))));
-            this.panelMenu.Controls.Add(this.iconBtnEliminar);
-            this.panelMenu.Controls.Add(this.iconBtnDetalle);
-            this.panelMenu.Controls.Add(this.iconBtnBuscar);
-            this.panelMenu.Controls.Add(this.iconBtnModificar);
+            this.panelMenu.Controls.Add(this.iconBtnAjustes);
             this.panelMenu.Controls.Add(this.iconBtnAgregar);
             this.panelMenu.Controls.Add(this.iconBtnListar);
             this.panelMenu.Controls.Add(this.panel1);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 801);
+            this.panelMenu.Size = new System.Drawing.Size(220, 676);
             this.panelMenu.TabIndex = 0;
             // 
-            // iconBtnEliminar
+            // iconBtnAjustes
             // 
-            this.iconBtnEliminar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconBtnEliminar.FlatAppearance.BorderSize = 0;
-            this.iconBtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconBtnEliminar.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconBtnEliminar.ForeColor = System.Drawing.Color.White;
-            this.iconBtnEliminar.IconChar = FontAwesome.Sharp.IconChar.Backspace;
-            this.iconBtnEliminar.IconColor = System.Drawing.Color.White;
-            this.iconBtnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconBtnEliminar.IconSize = 32;
-            this.iconBtnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconBtnEliminar.Location = new System.Drawing.Point(0, 465);
-            this.iconBtnEliminar.Name = "iconBtnEliminar";
-            this.iconBtnEliminar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconBtnEliminar.Size = new System.Drawing.Size(220, 65);
-            this.iconBtnEliminar.TabIndex = 7;
-            this.iconBtnEliminar.Text = "ELIMINAR ARTICULO";
-            this.iconBtnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconBtnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconBtnEliminar.UseVisualStyleBackColor = true;
-            this.iconBtnEliminar.Click += new System.EventHandler(this.iconBtnEliminar_Click);
-            // 
-            // iconBtnDetalle
-            // 
-            this.iconBtnDetalle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconBtnDetalle.FlatAppearance.BorderSize = 0;
-            this.iconBtnDetalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconBtnDetalle.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconBtnDetalle.ForeColor = System.Drawing.Color.White;
-            this.iconBtnDetalle.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
-            this.iconBtnDetalle.IconColor = System.Drawing.Color.White;
-            this.iconBtnDetalle.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconBtnDetalle.IconSize = 32;
-            this.iconBtnDetalle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconBtnDetalle.Location = new System.Drawing.Point(0, 400);
-            this.iconBtnDetalle.Name = "iconBtnDetalle";
-            this.iconBtnDetalle.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconBtnDetalle.Size = new System.Drawing.Size(220, 65);
-            this.iconBtnDetalle.TabIndex = 6;
-            this.iconBtnDetalle.Text = "VER DETALLE ARTICULO";
-            this.iconBtnDetalle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconBtnDetalle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconBtnDetalle.UseVisualStyleBackColor = true;
-            this.iconBtnDetalle.Click += new System.EventHandler(this.iconBtnDetalle_Click);
-            // 
-            // iconBtnBuscar
-            // 
-            this.iconBtnBuscar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconBtnBuscar.FlatAppearance.BorderSize = 0;
-            this.iconBtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconBtnBuscar.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconBtnBuscar.ForeColor = System.Drawing.Color.White;
-            this.iconBtnBuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.iconBtnBuscar.IconColor = System.Drawing.Color.White;
-            this.iconBtnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconBtnBuscar.IconSize = 32;
-            this.iconBtnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconBtnBuscar.Location = new System.Drawing.Point(0, 335);
-            this.iconBtnBuscar.Name = "iconBtnBuscar";
-            this.iconBtnBuscar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconBtnBuscar.Size = new System.Drawing.Size(220, 65);
-            this.iconBtnBuscar.TabIndex = 5;
-            this.iconBtnBuscar.Text = "BUSCAR ARTICULO";
-            this.iconBtnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconBtnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconBtnBuscar.UseVisualStyleBackColor = true;
-            this.iconBtnBuscar.Click += new System.EventHandler(this.iconBtnBuscar_Click);
-            // 
-            // iconBtnModificar
-            // 
-            this.iconBtnModificar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconBtnModificar.FlatAppearance.BorderSize = 0;
-            this.iconBtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconBtnModificar.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconBtnModificar.ForeColor = System.Drawing.Color.White;
-            this.iconBtnModificar.IconChar = FontAwesome.Sharp.IconChar.Pen;
-            this.iconBtnModificar.IconColor = System.Drawing.Color.White;
-            this.iconBtnModificar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconBtnModificar.IconSize = 32;
-            this.iconBtnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconBtnModificar.Location = new System.Drawing.Point(0, 270);
-            this.iconBtnModificar.Name = "iconBtnModificar";
-            this.iconBtnModificar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconBtnModificar.Size = new System.Drawing.Size(220, 65);
-            this.iconBtnModificar.TabIndex = 4;
-            this.iconBtnModificar.Text = "MODIFICAR ARTICULO";
-            this.iconBtnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconBtnModificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconBtnModificar.UseVisualStyleBackColor = true;
-            this.iconBtnModificar.Click += new System.EventHandler(this.iconBtnModificar_Click);
+            this.iconBtnAjustes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconBtnAjustes.FlatAppearance.BorderSize = 0;
+            this.iconBtnAjustes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconBtnAjustes.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconBtnAjustes.ForeColor = System.Drawing.Color.White;
+            this.iconBtnAjustes.IconChar = FontAwesome.Sharp.IconChar.Toolbox;
+            this.iconBtnAjustes.IconColor = System.Drawing.Color.White;
+            this.iconBtnAjustes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconBtnAjustes.IconSize = 32;
+            this.iconBtnAjustes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconBtnAjustes.Location = new System.Drawing.Point(0, 270);
+            this.iconBtnAjustes.Name = "iconBtnAjustes";
+            this.iconBtnAjustes.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconBtnAjustes.Size = new System.Drawing.Size(220, 65);
+            this.iconBtnAjustes.TabIndex = 4;
+            this.iconBtnAjustes.Text = "AJUSTES";
+            this.iconBtnAjustes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconBtnAjustes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconBtnAjustes.UseVisualStyleBackColor = true;
+            this.iconBtnAjustes.Click += new System.EventHandler(this.iconBtnAjustes_Click);
             // 
             // iconBtnAgregar
             // 
@@ -240,7 +165,7 @@
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(1148, 75);
+            this.panelTitleBar.Size = new System.Drawing.Size(1233, 75);
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -250,7 +175,7 @@
             this.panel2.Controls.Add(this.iconBtnClose);
             this.panel2.Controls.Add(this.iconBtnMaximize);
             this.panel2.Controls.Add(this.iconBtnMinimize);
-            this.panel2.Location = new System.Drawing.Point(1029, 12);
+            this.panel2.Location = new System.Drawing.Point(1114, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(107, 28);
             this.panel2.TabIndex = 0;
@@ -332,7 +257,7 @@
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(220, 75);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(1148, 9);
+            this.panelShadow.Size = new System.Drawing.Size(1233, 9);
             this.panelShadow.TabIndex = 2;
             // 
             // panelDesktop
@@ -341,7 +266,7 @@
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 84);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1148, 717);
+            this.panelDesktop.Size = new System.Drawing.Size(1233, 592);
             this.panelDesktop.TabIndex = 3;
             // 
             // iconMenuItem1
@@ -353,16 +278,17 @@
             this.iconMenuItem1.Size = new System.Drawing.Size(32, 19);
             this.iconMenuItem1.Text = "iconMenuItem1";
             // 
-            // fmrPrincipal
+            // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1368, 801);
+            this.ClientSize = new System.Drawing.Size(1453, 676);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelShadow);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
-            this.Name = "fmrPrincipal";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "frmPrincipal";
             this.Text = "fmrPrincipal";
             this.panelMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -379,12 +305,9 @@
 
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panel1;
-        private FontAwesome.Sharp.IconButton iconBtnDetalle;
-        private FontAwesome.Sharp.IconButton iconBtnBuscar;
-        private FontAwesome.Sharp.IconButton iconBtnModificar;
+        private FontAwesome.Sharp.IconButton iconBtnAjustes;
         private FontAwesome.Sharp.IconButton iconBtnAgregar;
         private FontAwesome.Sharp.IconButton iconBtnListar;
-        private FontAwesome.Sharp.IconButton iconBtnEliminar;
         private System.Windows.Forms.PictureBox btnHome;
         private System.Windows.Forms.Panel panelTitleBar;
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;

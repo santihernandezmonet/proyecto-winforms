@@ -39,6 +39,7 @@
             this.lblDetallePrecio = new System.Windows.Forms.Label();
             this.txtBoxDetalleDescrip = new System.Windows.Forms.TextBox();
             this.lblDetalleDescrip = new System.Windows.Forms.Label();
+            this.btnDetalleArticulo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pboxDetalle)).BeginInit();
             this.SuspendLayout();
             // 
@@ -142,12 +143,26 @@
             this.lblDetalleDescrip.TabIndex = 9;
             this.lblDetalleDescrip.Text = "Descripción:";
             // 
+            // btnDetalleArticulo
+            // 
+            this.btnDetalleArticulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDetalleArticulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDetalleArticulo.ForeColor = System.Drawing.Color.White;
+            this.btnDetalleArticulo.Location = new System.Drawing.Point(626, 386);
+            this.btnDetalleArticulo.Name = "btnDetalleArticulo";
+            this.btnDetalleArticulo.Size = new System.Drawing.Size(101, 23);
+            this.btnDetalleArticulo.TabIndex = 11;
+            this.btnDetalleArticulo.Text = "Cerrar";
+            this.btnDetalleArticulo.UseVisualStyleBackColor = true;
+            this.btnDetalleArticulo.Click += new System.EventHandler(this.btnDetalleArticulo_Click);
+            // 
             // frmDetalleArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(170)))), ((int)(((byte)(149)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(130)))), ((int)(((byte)(114)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDetalleArticulo);
             this.Controls.Add(this.txtBoxDetalleDescrip);
             this.Controls.Add(this.lblDetalleDescrip);
             this.Controls.Add(this.txtBoxDetallePrecio);
@@ -161,6 +176,7 @@
             this.Controls.Add(this.pboxDetalle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmDetalleArticulo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Detalle del Articulo";
             this.Load += new System.EventHandler(this.frmDetalleArticulo_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pboxDetalle)).EndInit();
@@ -182,5 +198,6 @@
         private System.Windows.Forms.Label lblDetallePrecio;
         private System.Windows.Forms.TextBox txtBoxDetalleDescrip;
         private System.Windows.Forms.Label lblDetalleDescrip;
+        private System.Windows.Forms.Button btnDetalleArticulo;
     }
 }

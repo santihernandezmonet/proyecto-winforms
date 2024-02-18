@@ -45,9 +45,9 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.lblPrecio = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelAltaArticulo = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pbxArticulo)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.panelAltaArticulo.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCodigo
@@ -229,47 +229,50 @@
             this.lblPrecio.TabIndex = 16;
             this.lblPrecio.Text = "Precio:";
             // 
-            // panel1
+            // panelAltaArticulo
             // 
-            this.panel1.AutoSize = true;
-            this.panel1.Controls.Add(this.pbxArticulo);
-            this.panel1.Controls.Add(this.txtPrecio);
-            this.panel1.Controls.Add(this.lblCodigo);
-            this.panel1.Controls.Add(this.lblPrecio);
-            this.panel1.Controls.Add(this.txtCodigo);
-            this.panel1.Controls.Add(this.btnCancelar);
-            this.panel1.Controls.Add(this.lblNombre);
-            this.panel1.Controls.Add(this.btnAceptar);
-            this.panel1.Controls.Add(this.txtNombre);
-            this.panel1.Controls.Add(this.cboMarca);
-            this.panel1.Controls.Add(this.lblDescripcion);
-            this.panel1.Controls.Add(this.cboCategoria);
-            this.panel1.Controls.Add(this.txtDescripcion);
-            this.panel1.Controls.Add(this.lblMarca);
-            this.panel1.Controls.Add(this.lblImagen);
-            this.panel1.Controls.Add(this.lblCategoria);
-            this.panel1.Controls.Add(this.txtUrlImg);
-            this.panel1.Location = new System.Drawing.Point(152, 26);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(594, 454);
-            this.panel1.TabIndex = 18;
+            this.panelAltaArticulo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelAltaArticulo.AutoSize = true;
+            this.panelAltaArticulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(130)))), ((int)(((byte)(114)))));
+            this.panelAltaArticulo.Controls.Add(this.pbxArticulo);
+            this.panelAltaArticulo.Controls.Add(this.txtPrecio);
+            this.panelAltaArticulo.Controls.Add(this.lblCodigo);
+            this.panelAltaArticulo.Controls.Add(this.lblPrecio);
+            this.panelAltaArticulo.Controls.Add(this.txtCodigo);
+            this.panelAltaArticulo.Controls.Add(this.btnCancelar);
+            this.panelAltaArticulo.Controls.Add(this.lblNombre);
+            this.panelAltaArticulo.Controls.Add(this.btnAceptar);
+            this.panelAltaArticulo.Controls.Add(this.txtNombre);
+            this.panelAltaArticulo.Controls.Add(this.cboMarca);
+            this.panelAltaArticulo.Controls.Add(this.lblDescripcion);
+            this.panelAltaArticulo.Controls.Add(this.cboCategoria);
+            this.panelAltaArticulo.Controls.Add(this.txtDescripcion);
+            this.panelAltaArticulo.Controls.Add(this.lblMarca);
+            this.panelAltaArticulo.Controls.Add(this.lblImagen);
+            this.panelAltaArticulo.Controls.Add(this.lblCategoria);
+            this.panelAltaArticulo.Controls.Add(this.txtUrlImg);
+            this.panelAltaArticulo.Location = new System.Drawing.Point(0, 0);
+            this.panelAltaArticulo.Name = "panelAltaArticulo";
+            this.panelAltaArticulo.Size = new System.Drawing.Size(602, 412);
+            this.panelAltaArticulo.TabIndex = 18;
             // 
             // frmAltaArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(170)))), ((int)(((byte)(149)))));
-            this.ClientSize = new System.Drawing.Size(967, 534);
-            this.Controls.Add(this.panel1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(159)))));
+            this.ClientSize = new System.Drawing.Size(600, 411);
+            this.Controls.Add(this.panelAltaArticulo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmAltaArticulo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Articulo";
             this.Load += new System.EventHandler(this.frmAltaArticulo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxArticulo)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelAltaArticulo.ResumeLayout(false);
+            this.panelAltaArticulo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,6 +297,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label lblPrecio;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelAltaArticulo;
     }
 }

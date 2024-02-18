@@ -48,5 +48,9 @@ namespace winform_app
             }
         }
 
+        private void btnDetalleArticulo_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
