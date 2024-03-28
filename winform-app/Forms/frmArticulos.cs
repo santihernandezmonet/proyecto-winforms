@@ -259,7 +259,7 @@ namespace winform_app
             bool rta = true;
             if(dgvArticulos.SelectedRows.Count <= 0)
             {
-                MessageBox.Show("Error! No hay ninguna fila seleccionada");
+                MessageBox.Show("No hay ninguna fila seleccionada!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 rta = false;
             }
 

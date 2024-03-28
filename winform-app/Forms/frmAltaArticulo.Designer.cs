@@ -166,6 +166,7 @@
             // 
             // cboCategoria
             // 
+            this.cboCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCategoria.FormattingEnabled = true;
             this.cboCategoria.Location = new System.Drawing.Point(113, 209);
             this.cboCategoria.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -175,6 +176,7 @@
             // 
             // cboMarca
             // 
+            this.cboMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboMarca.FormattingEnabled = true;
             this.cboMarca.Location = new System.Drawing.Point(113, 241);
             this.cboMarca.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -255,6 +257,7 @@
             this.panelAltaArticulo.Name = "panelAltaArticulo";
             this.panelAltaArticulo.Size = new System.Drawing.Size(602, 412);
             this.panelAltaArticulo.TabIndex = 18;
+            this.panelAltaArticulo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAltaArticulo_Paint);
             // 
             // frmAltaArticulo
             // 

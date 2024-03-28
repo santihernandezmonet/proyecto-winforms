@@ -44,29 +44,38 @@ namespace winform_app
                 if (articulo == null)
                     articulo = new Articulo();
 
-
-                articulo.Codigo = txtCodigo.Text;
-                articulo.Nombre = txtNombre.Text;
-                articulo.Descripcion = txtDescripcion.Text;
-                articulo.ImagenUrl = txtUrlImg.Text;
-                articulo.Categoria = (Categoria)cboCategoria.SelectedItem;
-                articulo.Marca = (Marca)cboMarca.SelectedItem;
-                articulo.Precio = decimal.Parse(txtPrecio.Text);
-
-                if (articulo.Id != 0)
+                if(string.IsNullOrWhiteSpace(txtCodigo.Text) ||
+                    string.IsNullOrWhiteSpace(txtNombre.Text) ||
+                    string.IsNullOrWhiteSpace(txtDescripcion.Text) ||
+                    string.IsNullOrWhiteSpace(txtUrlImg.Text) ||
+                    string.IsNullOrWhiteSpace(txtPrecio.Text))
                 {
-                    negocio.modificar(articulo);
-                    MessageBox.Show("Modificado exitosamente");
-                }
-                else
+                    MessageBox.Show("Por favor, completa todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                } else
                 {
-                    negocio.agregar(articulo);
-                    MessageBox.Show("Agregado exitosamente");
+                    articulo.Codigo = txtCodigo.Text;
+                    articulo.Nombre = txtNombre.Text;
+                    articulo.Descripcion = txtDescripcion.Text;
+                    articulo.ImagenUrl = txtUrlImg.Text;
+                    articulo.Categoria = (Categoria)cboCategoria.SelectedItem;
+                    articulo.Marca = (Marca)cboMarca.SelectedItem;
+                    articulo.Precio = decimal.Parse(txtPrecio.Text);
+
+                    if (articulo.Id != 0)
+                    {
+                        negocio.modificar(articulo);
+                        MessageBox.Show("Modificado exitosamente");
+                    }
+                    else
+                    {
+                        negocio.agregar(articulo);
+                        MessageBox.Show("Agregado exitosamente");
+                    }
+
+                    if (archivo != null && !(txtUrlImg.Text.ToUpper().Contains("HTTP")))
+                        File.Copy(archivo.FileName, ConfigurationManager.AppSettings["images-folder"] + archivo.SafeFileName);
+
                 }
-
-                if (archivo != null && !(txtUrlImg.Text.ToUpper().Contains("HTTP")))
-                    File.Copy(archivo.FileName, ConfigurationManager.AppSettings["images-folder"] + archivo.SafeFileName);
-
 
                 Close();
 
@@ -150,6 +159,11 @@ namespace winform_app
                 MessageBox.Show("No se permiten letras");
 
             }
+        }
+
+        private void panelAltaArticulo_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
