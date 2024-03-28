@@ -67,6 +67,7 @@
             // 
             this.txtBoxDetalleNombre.Location = new System.Drawing.Point(511, 57);
             this.txtBoxDetalleNombre.Name = "txtBoxDetalleNombre";
+            this.txtBoxDetalleNombre.ReadOnly = true;
             this.txtBoxDetalleNombre.Size = new System.Drawing.Size(154, 20);
             this.txtBoxDetalleNombre.TabIndex = 2;
             // 
@@ -74,6 +75,7 @@
             // 
             this.txtBoxDetalleMarca.Location = new System.Drawing.Point(511, 96);
             this.txtBoxDetalleMarca.Name = "txtBoxDetalleMarca";
+            this.txtBoxDetalleMarca.ReadOnly = true;
             this.txtBoxDetalleMarca.Size = new System.Drawing.Size(154, 20);
             this.txtBoxDetalleMarca.TabIndex = 4;
             // 
@@ -92,6 +94,7 @@
             // 
             this.txtBoxDetalleCategoria.Location = new System.Drawing.Point(511, 138);
             this.txtBoxDetalleCategoria.Name = "txtBoxDetalleCategoria";
+            this.txtBoxDetalleCategoria.ReadOnly = true;
             this.txtBoxDetalleCategoria.Size = new System.Drawing.Size(154, 20);
             this.txtBoxDetalleCategoria.TabIndex = 6;
             // 
@@ -110,6 +113,7 @@
             // 
             this.txtBoxDetallePrecio.Location = new System.Drawing.Point(511, 175);
             this.txtBoxDetallePrecio.Name = "txtBoxDetallePrecio";
+            this.txtBoxDetallePrecio.ReadOnly = true;
             this.txtBoxDetallePrecio.Size = new System.Drawing.Size(154, 20);
             this.txtBoxDetallePrecio.TabIndex = 8;
             // 
@@ -129,6 +133,7 @@
             this.txtBoxDetalleDescrip.Location = new System.Drawing.Point(523, 217);
             this.txtBoxDetalleDescrip.Multiline = true;
             this.txtBoxDetalleDescrip.Name = "txtBoxDetalleDescrip";
+            this.txtBoxDetalleDescrip.ReadOnly = true;
             this.txtBoxDetalleDescrip.Size = new System.Drawing.Size(204, 92);
             this.txtBoxDetalleDescrip.TabIndex = 10;
             // 
