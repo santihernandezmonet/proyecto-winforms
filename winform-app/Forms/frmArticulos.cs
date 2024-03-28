@@ -62,6 +62,8 @@ namespace winform_app
         {
             dgvArticulos.Columns["ImagenUrl"].Visible = false;
             dgvArticulos.Columns["Id"].Visible = false;
+            dgvArticulos.Columns["Descripcion"].Visible = false;
+            dgvArticulos.Columns["Codigo"].Visible = false;
         }
 
         private void cargarImagen(string imagen)
@@ -247,6 +249,11 @@ namespace winform_app
         }
 
         private void lblFiltro_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvArticulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
