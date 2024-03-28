@@ -89,11 +89,14 @@ namespace winform_app
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-
-            frmAltaArticulo modificar = new frmAltaArticulo(seleccionado);
-            modificar.ShowDialog();
-            cargar();
+            if (validarFilaSeleccionada())
+            {
+                Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                frmAltaArticulo modificar = new frmAltaArticulo(seleccionado);
+                modificar.ShowDialog();
+                cargar();
+            }
+            
         }
 
         private void btnEliminarFisico_Click(object sender, EventArgs e)
@@ -110,11 +113,12 @@ namespace winform_app
                 DialogResult rta = MessageBox.Show("¿Estas seguro de eliminarlo?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (rta == DialogResult.Yes)
                 {
-                    seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-
-                    negocio.eliminarFisico(seleccionado.Id);
-
-                    cargar();
+                    if (validarFilaSeleccionada()) 
+                    {
+                        seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                        negocio.eliminarFisico(seleccionado.Id);
+                        cargar();
+                    }
                 }
 
             }
@@ -241,21 +245,27 @@ namespace winform_app
 
         private void btnDetalle_Click(object sender, EventArgs e)
         {
-            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-            frmDetalleArticulo detalle = new frmDetalleArticulo(seleccionado);
-            detalle.ShowDialog();
-            cargar();
-
+            if(validarFilaSeleccionada()) 
+            {
+                Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                frmDetalleArticulo detalle = new frmDetalleArticulo(seleccionado);
+                detalle.ShowDialog();
+                cargar();
+            }
         }
 
-        private void lblFiltro_Click(object sender, EventArgs e)
+        private bool validarFilaSeleccionada()
         {
+            bool rta = true;
+            if(dgvArticulos.SelectedRows.Count <= 0)
+            {
+                MessageBox.Show("Error! No hay ninguna fila seleccionada");
+                rta = false;
+            }
 
+            return rta;
         }
 
-        private void dgvArticulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+ 
     }
 }

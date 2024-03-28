@@ -79,7 +79,6 @@
             this.dgvArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvArticulos.Size = new System.Drawing.Size(901, 262);
             this.dgvArticulos.TabIndex = 0;
-            this.dgvArticulos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvArticulos_CellContentClick);
             this.dgvArticulos.SelectionChanged += new System.EventHandler(this.dgvElementos_SelectionChanged);
             // 
             // pbxArticulos
@@ -142,7 +141,6 @@
             this.lblFiltro.Size = new System.Drawing.Size(39, 13);
             this.lblFiltro.TabIndex = 6;
             this.lblFiltro.Text = "Filtro:";
-            this.lblFiltro.Click += new System.EventHandler(this.lblFiltro_Click);
             // 
             // txtBoxFiltro
             // 
